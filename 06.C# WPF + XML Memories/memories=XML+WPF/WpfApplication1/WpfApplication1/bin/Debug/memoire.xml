@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<memoire>
+  <momoireText DateTime="2018/9/14 下午 02:05:12" Index="0">
+    <mItems Seq="0" Content="1.中秋" Status="1" />
+    <mItems Seq="1" Content="2.国庆" Status="1" />
+    <mItems Seq="2" Content="3.元旦" Status="1" />
+    <mItems Seq="3" Content="4.过年" Status="1" />
+  </momoireText>
+  <momoireText DateTime="2018/9/14 下午 02:06:00" Index="1">
+    <mItems Seq="0" Content="1.你好" Status="1" />
+    <mItems Seq="1" Content="2.我好" Status="1" />
+    <mItems Seq="2" Content="3.大家好" Status="1" />
+    <mItems Seq="3" Content="4.Hello World" Status="1" />
+  </momoireText>
+  <momoireText DateTime="2018/9/14 下午 02:07:14" Index="2">
+    <mItems Seq="0" Content="1.大家好才是真的好" Status="1" />
+    <mItems Seq="1" Content="2.Hello好才是World好" Status="1" />
+  </momoireText>
+  <momoireText DateTime="2018/9/14 下午 03:31:27" Index="3">
+    <mItems Seq="0" Content="1.大家好才是真的好" Status="1" />
+    <mItems Seq="1" Content="2.Hello好才是World好" Status="1" />
+    <mItems Seq="2" Content="3.资讯" Status="1" />
+  </momoireText>
+</memoire>
