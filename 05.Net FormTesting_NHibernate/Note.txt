@@ -1,0 +1,79 @@
+2018年8月27日19:27:25
+
+NHibernate 简介
+
+	NHibernate 是.NET环境的一个 ORM 框架。
+	NHibernate 就是通过配置表和实体类之间的映射XML表，然后对数据库的操作可以调用它提供的很多结构来完成。
+	
+	比如，添加数据，只需要new一个实体类对象，然后调用Get方法，就可以插入数据到数据库中了。
+
+	NHibernate 不仅仅管理.NET类到数据库表的映射，还提供数据查询和数据获取的方法，大幅度的减少我们开发是人工使用SQL处理数据的时间
+
+	
+	创建测试数据表
+
+	
+	NuGet导入框架
+
+
+	新建Framework 4.6 以上版本（以窗体应用为例）
+
+	新建实体类 News.cs
+	为News.cs添加配置文件  后缀为 News.hbm.xml
+
+	修改Mapping配置文件信息
+
+	修改映射文件 为始终复制 的 嵌入的资源  （在xml映射文件属性中）
+
+================================================================================
+	
+	了解NHibernate的Session
+
+	这里的Session和HTTP的Session是不同的概念。
+
+	NHibernate 中的 Session 写作 ISession， 是NHibernate 的工作单元。
+	从ISessionFactory中获取
+
+	ISessionFactory可以创建并打开新的Session。一个Session代表一个单线程的单元操作。
+
+	ISessionFactory是线程安全的，很多线程可以同时访问它。
+
+	ISession不是线程安全的，它代表与数据库之间的一次操作。
+
+	ISession通过ISessionFactory打开，在所有的工作完成后，需要关闭。
+
+==================================================================================
+
+	创建SessionFactory工具类。引入NHibernate命名空间
+
+	创建NewsDal类，用来操作数据库。
+
+==================================================================================
+	
+	创建 Hibernate 配置文件 hibernate.cfg.xml    注意：Hibernate 而不是 NHibernate
+	属性中修改 为 始终复制  内容
+	
+	配置文件中修改数据库连接字串
+
+===================================================================================
+
+	窗体中添加按钮及按钮单击事件
+	
+	Form1 类中
+		初始化需要用到的类
+
+		private ISession session;
+        	private NewsDal newsDal;
+        	private SessionFactory sessionFactory = new SessionFactory();
+
+	public Form1() {
+            InitializeComponent();
+            session = sessionFactory.GetSession();
+            newsDal = new NewsDal(session);
+        }
+
+	
+
+	
+
+

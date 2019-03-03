@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping
+  xmlns="urn:nhibernate-mapping-2.2"
+  assembly="NHibernateDemo"
+  namespace="NHibernateDemo.Models"><!--程序集的名称、类的命名空间-->
+  <class name="NHibernateDemo.Models.News,NHibernateDemo"
+         table="News">
+    <!--表格字段-->
+    <id name="ID" column="ID" type="Int32"
+        unsaved-value="0">
+      <generator class="native"></generator><!--native 自增长-->
+    </id>
+    <property name="Title" column="Title"
+              type="string" length="150" not-null="true"/>
+    <property name="Content" column="Content"
+              type="string" not-null="true"/>
+    <property name="AddTime" column="AddTime"
+              type="DateTime" not-null="true"/>
+    <property name="Status" column="Status"
+              type="bool" not-null="true"/>
+  </class>
+</hibernate-mapping>

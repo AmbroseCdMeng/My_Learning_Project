@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration
+  xmlns="urn:nhibernate-configuration-2.2">
+  <session-factory>
+    <property
+      name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+    <property
+      name="dialect">NHibernate.Dialect.MsSqlCeDialect</property>
+    <property
+      name="connection.driver_class">NHibernate.Driver.SqlClientDriver</property>
+    <!--数据库连接-->
+    <property name="connection.connection_string">
+      <!--Data
+      Source=.;Initial Catalog=NHibernateDemo;Integrated
+      Security=True;Pooling=False-->
+      Data Source=.; Initial Catalog=NHibernateDemo; User ID=sa; Password=951026
+    </property>
+    <property name="show_sql">true</property>
+    <!--告诉Hibernate，映射的dll文件。即项目的程序集名称-->
+    <mapping assembly="NHibernateDemo"/>
+  </session-factory>
+</hibernate-configuration>
