@@ -1,0 +1,13 @@
+E:\Demo\EightDigital\EightDigital\EightDigital\bin\Debug\EightDigital.exe.config
+E:\Demo\EightDigital\EightDigital\EightDigital\obj\Debug\EightDigital.csprojResolveAssemblyReference.cache
+E:\Demo\EightDigital\EightDigital\EightDigital\bin\Debug\EightDigital.exe
+E:\Demo\EightDigital\EightDigital\EightDigital\bin\Debug\EightDigital.pdb
+E:\Demo\EightDigital\EightDigital\EightDigital\obj\Debug\EightDigital.exe
+E:\Demo\EightDigital\EightDigital\EightDigital\obj\Debug\EightDigital.pdb
+F:\103.Testing\09.EightDigital\EightDigital\EightDigital\bin\Debug\EightDigital.exe.config
+F:\103.Testing\09.EightDigital\EightDigital\EightDigital\bin\Debug\EightDigital.exe
+F:\103.Testing\09.EightDigital\EightDigital\EightDigital\bin\Debug\EightDigital.pdb
+F:\103.Testing\09.EightDigital\EightDigital\EightDigital\obj\Debug\EightDigital.csprojAssemblyReference.cache
+F:\103.Testing\09.EightDigital\EightDigital\EightDigital\obj\Debug\EightDigital.csproj.CoreCompileInputs.cache
+F:\103.Testing\09.EightDigital\EightDigital\EightDigital\obj\Debug\EightDigital.exe
+F:\103.Testing\09.EightDigital\EightDigital\EightDigital\obj\Debug\EightDigital.pdb
