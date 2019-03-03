@@ -1,0 +1,11 @@
+H:\ASP.NET Core MVC项目实践-企业主页\CompanyHome\CompanyHome\bin\Debug\netcoreapp2.0\CompanyHome.deps.json
+H:\ASP.NET Core MVC项目实践-企业主页\CompanyHome\CompanyHome\bin\Debug\netcoreapp2.0\CompanyHome.runtimeconfig.json
+H:\ASP.NET Core MVC项目实践-企业主页\CompanyHome\CompanyHome\bin\Debug\netcoreapp2.0\CompanyHome.runtimeconfig.dev.json
+H:\ASP.NET Core MVC项目实践-企业主页\CompanyHome\CompanyHome\bin\Debug\netcoreapp2.0\CompanyHome.dll
+H:\ASP.NET Core MVC项目实践-企业主页\CompanyHome\CompanyHome\bin\Debug\netcoreapp2.0\CompanyHome.pdb
+H:\ASP.NET Core MVC项目实践-企业主页\CompanyHome\CompanyHome\obj\Debug\netcoreapp2.0\CompanyHome.csprojResolveAssemblyReference.cache
+H:\ASP.NET Core MVC项目实践-企业主页\CompanyHome\CompanyHome\obj\Debug\netcoreapp2.0\CompanyHome.csproj.CoreCompileInputs.cache
+H:\ASP.NET Core MVC项目实践-企业主页\CompanyHome\CompanyHome\obj\Debug\netcoreapp2.0\CompanyHome.AssemblyInfoInputs.cache
+H:\ASP.NET Core MVC项目实践-企业主页\CompanyHome\CompanyHome\obj\Debug\netcoreapp2.0\CompanyHome.AssemblyInfo.cs
+H:\ASP.NET Core MVC项目实践-企业主页\CompanyHome\CompanyHome\obj\Debug\netcoreapp2.0\CompanyHome.dll
+H:\ASP.NET Core MVC项目实践-企业主页\CompanyHome\CompanyHome\obj\Debug\netcoreapp2.0\CompanyHome.pdb

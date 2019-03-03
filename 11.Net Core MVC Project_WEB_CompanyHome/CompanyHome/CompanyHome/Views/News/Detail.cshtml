@@ -1,0 +1,63 @@
+﻿@model CommentAddInfo
+@{
+    ViewData["Title"] = "Detail";
+
+    var news = ViewBag.NewsModel as News;
+    var comments = ViewBag.Comments as List<Comment>;
+}
+
+<div class="main_banner" style="background-image: url(/img/1843_src.jpg);">
+    <img src="img/lie.jpg" alt="">
+</div>
+
+<div class="beijing1">
+    <div class="qi_feng_yi">
+        <h1>@news.TITLE</h1>
+        <p>发布时间：@news.ADDTIME 责任编辑：@news.AUTHOR</p>
+    </div>
+    <div class="qi_feng_er">
+        @Html.Raw(news.CONTENT)
+        @*<h4 style="text-indent: 2em;"></h4>
+            <p style="text-indent: 2em;">@news.CONTENT</p>*@
+    </div>
+
+    @*评论区*@
+    <div>
+        @for (int i = 0; i < comments.Count(); i++) {
+            <h2>@Html.Raw(comments[i].CONTENT)</h2>@(comments[i].LEVEL) @:层
+        }
+    </div>
+
+    @*增加评论功能*@
+    <div>
+        <form method="post" class="form-x" action="">
+            @*隐藏域提交评论对应的新闻iD*@
+            <input type="hidden" name="nid" value=@news.ID />
+            <div class="form-group">
+                <div class="label">
+                    <label asp-for="CONTENT">内容：</label>
+                </div>
+                <div class="field">
+                    <textarea asp-for="CONTENT" id="elm1" class="xheditor" rows="12" cols="80" style="width: 100%"></textarea>
+                    <span asp-validation-for="CONTENT" class="error"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label">
+                    <label></label>
+                </div>
+                <div class="field">
+                    <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/lib/xheditor-1.2.2/xheditor-1.2.2.min.js"></script>
+    <script src="~/lib/xheditor-1.2.2/xheditor_lang/zh-cn.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation/dist/additional-methods.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+}

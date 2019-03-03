@@ -1,0 +1,96 @@
+1、区域路由在 Startup 中配置
+	Action冲突问题：
+		在 .Net 中，可以配置路由的 namespace 参数指定默认的命令空间来区分
+		在 .Net Core 中，没有 namespace 这个参数，但是有 AreaName 属性
+			这个属性的用法和 namespace 类似。但不同的是，在路由中配置 AreaName 的同时还需要在控制器上增加 Area 属性。如： Area("Manage")]
+
+2、验证码生成原理
+	Action中 随机生成数字
+	将生成的数字保存到Session中
+	构造图片，生成验证码，加入干扰线条等
+	返回生成的图片
+
+3、引用包的区别
+	在 .NET 中，可以直接添加引用来添加 Microsoft 的组件
+	在 .NET 中，不能直接如此添加引用
+		可以使用添加 NuGet 的方法，搜索需要安装的组件，点击安装即可
+
+4、C#中的标签助手绑定表单字段
+	强类型视图中。使用asp-for绑定模型字段
+
+5、远程异步验证
+	Model实体中调用 AspNetCore.MVC 的Remote属性指明要使用的控制器和Action
+		如：[Remote("VerifyCode", "Home", "Manage", ErrorMessage = "{0}验证码不正确")]
+
+6、使用 SQL Server + EF Core 框架
+	引用 EFCore、EFCore.SqlServer、EFCore.Tools
+		命令 	Install-Package Microsoft.EntityFrameworkCore
+			Install-Package Microsoft.EntityFrameworkCore.SqlServer
+			Install-Package Microsoft.EntityFrameworkCore.Tools
+
+6.1 配置数据库连接	
+	appsetting.json 文件中配置链接字符串
+	startup.cs 文件中的 ConfigureServices 方法中注册数据库服务
+	添加对应的上下文 MyDBContent 写在Core 文件夹中
+
+	不同点：
+		在 .NET 中，配置完成后直接运行代码即可生成数据库。执行update-database可以更新数据库
+		在 .NET CORE 中，配置完成需要执行 Add-Migration Migrations 命令生成 Migrations 文件夹并且生成 时间+Migrations.cs类。
+			            执行 update-database 更新数据库
+
+6.2 登录基本判断 + 登录Cookies验证
+	 在 startup 中 ConfigureServices 配置授权
+	在 startip 中 Configure 使用授权
+
+
+7. 更新数据库
+	enable-migrations
+	add-migration
+	update-database
+
+8. 默认会使用ViewStart中设置的布局，如果不需要，在当前页面设定Layout = null
+
+9. @Html.Partial("") 和 @{Html.RenderPartial("")}
+
+10. xheditor富文本编辑器下载
+
+11. Remote 标记 调用路由对属性进行验证
+
+12. 配置单页专用路由
+
+13. 视图组件实现顶部最新新闻   顶部div通过视图组件动态加载
+
+14. SQL Server 增加数据脚本 
+	
+	USE [db.CompanyHome]
+	GO
+
+	INSERT INTO [dbo].[News]
+      	     ([TITLE]
+      	     ,[CONTENT]
+    	       ,[AUTHOR]
+  	         ,[ADDTIME]
+  	         ,[MAXLEVEL]
+  	         ,[CID])
+  	   select [TITLE]
+  	         ,[CONTENT]
+ 	          ,[AUTHOR]
+ 	          ,[ADDTIME]
+ 	          ,[MAXLEVEL]
+  	         ,[CID] from [dbo].[News]
+
+
+15. 视图组件的使用	定义视图组件 继承 ViewComponent 	视图组件类名称 为  实体类名 + Component 例如 NewsComponent
+ 
+		
+		视图组件放在Component文件夹中（无强制规定）
+
+在Share目录下创建Components 文件夹 下创建 NewComponent 文件夹 下创建 default 页面
+
+	InvalidOperationException: The view 'Components/NewsComponent/Default' was not found. The following locations 	were searched:
+	/Views/Home/Components/NewsComponent/Default.cshtml
+	/Views/Shared/Components/NewsComponent/Default.cshtml
+	/Pages/Shared/Components/NewsComponent/Default.cshtml
+		
+
+

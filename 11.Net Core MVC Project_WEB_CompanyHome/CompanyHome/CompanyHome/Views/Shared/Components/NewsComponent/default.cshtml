@@ -1,0 +1,10 @@
+﻿@model List<News>
+
+<div class="menu_right1">
+    @for (int i = 0; i < Model.Count; i++) {
+        <p>标题：@Model[i].TITLE</p>
+        <p>简介：@Model[i].CONTENT</p>
+        <p>作者：@Model[i].AUTHOR</p>
+    }
+</div>
+<div class="menu_right2"><a href="xin.html">查看详细</a></div>

@@ -1,0 +1,52 @@
+﻿@model List<News>
+@{
+    ViewData["Title"] = "新闻列表";
+
+    int totalPage = ViewBag.TotalPage;
+    int page = ViewBag.Page;
+    int total = ViewBag.Total;
+
+    /* 确定分页中的显示页码 */
+    int showPageCount = 3;  //分页中显示附近三个页码
+    int startPage = page - ((showPageCount - 1) / 2);
+    int endPage = page + ((showPageCount - 1) / 2);
+
+    if (startPage < 1) {
+        startPage = 1;
+    }
+    if (endPage > totalPage) {
+        endPage = totalPage;
+        if (page > totalPage - ((showPageCount - 1) / 2) && page <= totalPage && totalPage >= showPageCount) {
+            startPage = endPage - (showPageCount - 1);
+        }
+    } else if (page < 1 + ((showPageCount - 1) / 2) && page >= 1 && totalPage >= showPageCount) {
+        endPage = showPageCount;
+    }
+}
+
+<div class="main_banner" style="background-image: url(/img/1843_src.jpg);">
+    <img src="./img/xin.jpg" alt="">
+</div>
+<!--主体-->
+<div class="beijing1">
+    <ul class="news">
+        @for (int i = 0; i < Model.Count; i++) {
+            <li>
+                <div class="xin_wu">
+                    <a href="/news/detail/@Model[i].ID">@Model[i].ID @Model[i].TITLE</a>
+                    <span>@Model[i].ADDTIME.ToString("yyyy-MM-dd")</span>
+                </div>
+            </li>
+        }
+
+    </ul>
+    <div class="page">
+        <a href="/news/index/@(page -1 > 0 ? page - 1 : 1 )" class="page_prev"> << </a>
+        @for (int i = startPage; i <= endPage; i++) {
+            <a href="/news/index/@(i)" class=@(i==page?"thisclass":"")>@(i)</a>
+        }
+        <a href="/news/index/@(page +1 < totalPage ? page + 1 : totalPage )" class="page_next"> >> </a>
+    </div>
+</div>
+
+

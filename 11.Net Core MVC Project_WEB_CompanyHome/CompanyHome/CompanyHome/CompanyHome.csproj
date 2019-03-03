@@ -1,0 +1,180 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Areas\**" />
+    <Content Remove="Areas\**" />
+    <EmbeddedResource Remove="Areas\**" />
+    <None Remove="Areas\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Areas\Manage\Controllers\BaseController.cs" />
+    <Compile Include="Areas\Manage\Controllers\CategoryController.cs" />
+    <Compile Include="Areas\Manage\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Manage\Controllers\NewsController.cs" />
+    <Compile Include="Areas\Manage\Controllers\PageController.cs" />
+    <Compile Include="Areas\Manage\Models\NewsAddInfo.cs" />
+    <Compile Include="Areas\Manage\Models\PageAddInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\Manage\Views\Category\Index.cshtml" />
+    <None Include="Areas\Manage\Views\Home\Index.cshtml" />
+    <None Include="Areas\Manage\Views\Home\Login.cshtml" />
+    <None Include="Areas\Manage\Views\News\Add.cshtml" />
+    <None Include="Areas\Manage\Views\News\Index.cshtml" />
+    <None Include="Areas\Manage\Views\Page\Add.cshtml" />
+    <None Include="Areas\Manage\Views\Page\Index.cshtml" />
+    <None Include="Areas\Manage\Views\Shared\_Layout.cshtml" />
+    <None Include="Areas\Manage\_ViewImports.cshtml" />
+    <None Include="Areas\Manage\_ViewStart.cshtml" />
+    <None Include="wwwroot\js\site.js" />
+    <None Include="wwwroot\js\site.min.js" />
+    <None Include="wwwroot\lib\bluetemeplet\js\jquery.js" />
+    <None Include="wwwroot\lib\bluetemeplet\js\pintuer.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\ckfinder.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\ckfinder.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\ckfinder_v1.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\config.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\config.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\ckfinder_php5.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\connector.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\constants.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\lang\en.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\lang\zh-cn.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\lang\zh-tw.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\CommandHandlerBase.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\CopyFiles.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\CreateFolder.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\DeleteFiles.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\DeleteFolder.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\DownloadFile.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\FileUpload.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\GetFiles.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\GetFolders.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\Init.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\LoadCookies.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\MoveFiles.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\QuickUpload.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\RenameFile.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\RenameFolder.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\Thumbnail.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\CommandHandler\XmlCommandHandlerBase.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Core\AccessControlConfig.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Core\Config.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Core\Connector.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Core\Factory.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Core\FolderHandler.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Core\Hooks.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Core\ImagesConfig.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Core\Registry.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Core\ResourceTypeConfig.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Core\ThumbnailsConfig.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Core\Xml.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\ErrorHandler\Base.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\ErrorHandler\FileUpload.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\ErrorHandler\Http.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\ErrorHandler\QuickUpload.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Utils\FileSystem.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Utils\Misc.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Utils\Security.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\core\connector\php\php5\Utils\XmlNode.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\lang\en.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\lang\zh-cn.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\lang\zh-tw.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\plugins\fileeditor\codemirror\lib\codemirror.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\plugins\fileeditor\codemirror\LICENSE" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\plugins\fileeditor\codemirror\mode\clike\clike.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\plugins\fileeditor\codemirror\mode\css\css.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\plugins\fileeditor\codemirror\mode\htmlmixed\htmlmixed.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\plugins\fileeditor\codemirror\mode\javascript\javascript.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\plugins\fileeditor\codemirror\mode\php\php.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\plugins\fileeditor\codemirror\mode\xml\xml.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\plugins\fileeditor\plugin.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\plugins\fileeditor\plugin.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\plugins\flashupload\flash\Uploader.swf" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\plugins\imageresize\plugin.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\plugins\imageresize\plugin.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\plugins\zip\plugin.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\ckfinder\skins\kama\skin.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\googlemap\googlemap.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\mediaplayer\player.swf" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\prettify\lang-apollo.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\prettify\lang-hs.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\prettify\lang-lisp.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\prettify\lang-lua.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\prettify\lang-ml.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\prettify\lang-proto.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\prettify\lang-scala.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\prettify\lang-sql.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\prettify\lang-vhdl.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\prettify\lang-wiki.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\prettify\lang-yaml.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\prettify\prettify.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\saveremoteimg.asp" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\saveremoteimg.aspx" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\saveremoteimg.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\show.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\showplugin.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\showubb.asp" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\showubb.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\test.swf" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\upload.asp" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\upload.aspx" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\upload.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\uploadattach.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\uploadembed.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\uploadgui.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\uploadguiupload.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\demos\uploadthumb.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\jquery\jquery-1.11.2.min.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\jquery\jquery-1.4.4.min.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\jquery\jquery-1.4.4.src.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\jquery\jquery-1.8.3.min.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\jquery\jquery-1.9.1.min.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\serverscript\asp\ubb2html.asp" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\serverscript\php\ubb2html.php" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\xheditor_lang\en.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\xheditor_lang\zh-cn.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\xheditor_lang\zh-tw.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\xheditor_plugins\html2markdown.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\xheditor_plugins\htmldomparser.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\xheditor_plugins\multiupload\multiupload.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\xheditor_plugins\multiupload\swfupload\swfupload.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\xheditor_plugins\multiupload\swfupload\swfupload.swf" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\xheditor_plugins\showdown.js" />
+    <None Include="wwwroot\lib\xheditor-1.2.2\xheditor_plugins\ubb.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.jQuery.Unobtrusive.Ajax" Version="3.2.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="System.Drawing.Common" Version="4.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Util\Util.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Manage\Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Shared\Components\NewsComponent\default.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+
+</Project>

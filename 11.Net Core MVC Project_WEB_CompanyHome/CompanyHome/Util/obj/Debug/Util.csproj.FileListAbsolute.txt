@@ -1,0 +1,7 @@
+F:\103.Testing\11.Net Core MVC Project_WEB_CompanyHome\CompanyHome\Util\bin\Debug\Util.dll.config
+F:\103.Testing\11.Net Core MVC Project_WEB_CompanyHome\CompanyHome\Util\bin\Debug\Util.dll
+F:\103.Testing\11.Net Core MVC Project_WEB_CompanyHome\CompanyHome\Util\bin\Debug\Util.pdb
+F:\103.Testing\11.Net Core MVC Project_WEB_CompanyHome\CompanyHome\Util\obj\Debug\Util.csprojAssemblyReference.cache
+F:\103.Testing\11.Net Core MVC Project_WEB_CompanyHome\CompanyHome\Util\obj\Debug\Util.csproj.CoreCompileInputs.cache
+F:\103.Testing\11.Net Core MVC Project_WEB_CompanyHome\CompanyHome\Util\obj\Debug\Util.dll
+F:\103.Testing\11.Net Core MVC Project_WEB_CompanyHome\CompanyHome\Util\obj\Debug\Util.pdb
