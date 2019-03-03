@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchIDCard", "MatchIDCard\MatchIDCard.csproj", "{FBF5638F-074E-4158-A413-C5D8BB9A3F3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBF5638F-074E-4158-A413-C5D8BB9A3F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBF5638F-074E-4158-A413-C5D8BB9A3F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBF5638F-074E-4158-A413-C5D8BB9A3F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBF5638F-074E-4158-A413-C5D8BB9A3F3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB357A57-BAA7-4BF7-AB92-ACC3FEC6D38C}
+	EndGlobalSection
+EndGlobal
